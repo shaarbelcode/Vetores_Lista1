@@ -17,8 +17,8 @@ public class lista1_2bimEX1 {
             faturamento[i] = sc.nextDouble();
         }
         double total = 0;
-        for(double all : faturamento){
-            total += all;
+        for(double tudo : faturamento){
+            total += tudo;
             }
         double media = 0;
         for(double md :faturamento){
