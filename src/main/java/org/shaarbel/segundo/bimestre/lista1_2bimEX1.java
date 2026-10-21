@@ -6,7 +6,7 @@ package org.shaarbel.segundo.bimestre;
 
 import java.util.Scanner;
 
-public class lista1_2bim {
+public class lista1_2bimEX1 {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double[] faturamento = new double[7];
