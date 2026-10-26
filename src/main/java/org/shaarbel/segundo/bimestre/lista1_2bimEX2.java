@@ -15,6 +15,10 @@ public class lista1_2bimEX2 {
         for(int i= 0;i<estoque.length;i++){
             System.out.println("Digite a quantidade de "+ produto[i] +" restantes no Estoque");
                 estoque[i] = sc.nextInt();
+            if(estoque[i]<5){
+                System.out.println("Os produtos : " + produto[i]);
+                System.out.println("Estão com "+ estoque[i] + "no estoque");
+            }
         }
 
     }

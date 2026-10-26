@@ -7,14 +7,22 @@ package org.shaarbel.segundo.bimestre;
 import java.util.Scanner;
 
 public class lista1_2bimEX4 {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double[] salario = new double[]{1914.56,2554.50,3000.00,2519.60,1614.50,4154.30,2000.00,3102.02};
-        String [] funcionarios = new String[]{"João","Shaarbel","Maria","Alice","Pedro","Carlos","Natalia","Nicole"};
+        double[] salario = new double[]{1914.56, 2554.50, 3000.00, 2519.60, 1614.50, 4950.50, 2000.00, 3102.02};
+        String[] funcionarios = new String[]{"João", "Shaarbel", "Maria", "Alice", "Pedro", "Carlos", "Natalia", "Nicole"};
+        double aumentoTotal = 0;
 
-        //Se um salário ou preço é de R$ 1.000,00, o reajuste de 10% adiciona R$ 100,00 (
-        //1.000×0,10), resultando em um novo valor de R$ 1.100,00.
-
-
+        for (int i = 0; i < funcionarios.length; i++) {
+            double calculo = salario[i] * 0.10;
+            double novoSalario = salario[i] + calculo;
+            if (novoSalario > 5000.00) {
+                novoSalario = 5000.00;
+            }
+                aumentoTotal +=(novoSalario-salario[i]);
+                System.out.println(funcionarios[i] + " Salarío antigo : " + salario[i] + " -----> " + " Novo Salário " + novoSalario);
+            }
+                System.out.println("O aumento total da folha de funcionarios foi de : " + aumentoTotal);
+        }
     }
-}
+

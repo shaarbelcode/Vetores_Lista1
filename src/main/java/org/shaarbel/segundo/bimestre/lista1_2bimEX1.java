@@ -22,7 +22,7 @@ public class lista1_2bimEX1 {
             }
         double media = 0;
         for(double md :faturamento){
-            media = total/faturamento.length;
+            media = total /faturamento.length;
         }
         System.out.printf("O total da semana foi de %.2f%n " , total);
         System.out.printf("A média da semana foi de %.2f%n " , media);
