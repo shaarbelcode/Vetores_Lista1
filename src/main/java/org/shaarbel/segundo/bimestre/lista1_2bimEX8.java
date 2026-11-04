@@ -15,7 +15,6 @@ public class lista1_2bimEX8 {
         while(i<filial1.length&&j<filial2.length){
             k++;
             System.out.println(k);
-            break;
         }
     }
 }
